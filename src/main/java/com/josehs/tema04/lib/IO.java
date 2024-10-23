@@ -3,6 +3,7 @@ package com.josehs.tema04.lib;
 import java.util.Scanner;
 
 public class IO {
+    private static Scanner scanner = new Scanner()
     /**
      * Solicita un texto y valida su longitud este comprendido entre longitudMinima y longitudMaxima
      * @param mensaje Mensaje que se le mostrara al usuario
@@ -28,6 +29,15 @@ public class IO {
         public static int solicitarEntero(String mensaje, int valorMinimo, int valorMaximo){
             int valorLeido;
             boolean valido;
+            do {
+                System.out.println(mensaje);
+                valorLeido= Integer.parseInt(scanner.nextLine());
+                valido=valido=valorLeido >= valorMinimo && valorLeido <= valorMaximo;
+                if (!valido){
+                    System.err.println("El mensaje debe estar comprendido entre [%d - %d]\n", valorMinimo, valorMaximo);
+                } while (!valido);
+                return valorLeido;
+            }
         }
 
         /*
