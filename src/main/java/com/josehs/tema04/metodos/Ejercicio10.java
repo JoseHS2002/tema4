@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class Ejercicio10 {
     public static int m(int a){
-        int x=0;
-        for (int b=0; b==100; b++) {
+        int x;
+        int b=0;
+        do {
             x=a*b;
             System.out.println(x);
-        }
+        } while (b<100);
         return x;
     }
 
@@ -19,8 +20,8 @@ public class Ejercicio10 {
         if (i>100) {
             System.out.println("Error");
         } else {
-            System.out.println("La tabla de multiplicar de "+i+"es");
-            m(i);
+            int x=m(i);
+            System.out.println("La tabla de multiplicar de "+i+"es"+x);
         }
     }
 }
