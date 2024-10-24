@@ -1,5 +1,4 @@
-package com.josehs.tema04.lib.metodos;
-//TODO: 7 al 11
+package com.josehs.tema04.metodos;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.josehs.tema04.lib.metodos;
+package com.josehs.tema04.metodos;
 
 public class Ejercicio2 {
     /**

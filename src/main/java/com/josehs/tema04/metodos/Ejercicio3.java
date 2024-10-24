@@ -1,4 +1,4 @@
-package com.josehs.tema04.lib.metodos;
+package com.josehs.tema04.metodos;
 import java.util.Scanner;
 
 public class Ejercicio3 {
