@@ -1,9 +1,9 @@
 package com.josehs.tema04.lib;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class IO {
-    private static Scanner scanner = new Scanner()
+    //private static Scanner scanner = new Scanner()
     /**
      * Solicita un texto y valida su longitud este comprendido entre longitudMinima y longitudMaxima
      * @param mensaje Mensaje que se le mostrara al usuario
@@ -12,6 +12,7 @@ public class IO {
      * @return El texto leido valido
      */
 
+    /*
     String solicitarString(String mensaje, int longitudMinima, int longitudMaxima) {
         String nombre=solicitarString("Dime tu nombre", 2, 30);
         String mensajeLeido;
@@ -40,12 +41,14 @@ public class IO {
             }
         }
 
+     */
+
         /*
         import com.josehs.tema04.lib.IO;
         String nombreProducto = IO.solicitarString("Indica el nombre del producto: ", 2, 30);
         System.out.println(nombreProducto);
 
          */
-    }
+
 
 }

@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'com.josehs.Tema04'
+group = 'com.josehs.tema04'
 version = '1.0-SNAPSHOT'
 
 repositories {

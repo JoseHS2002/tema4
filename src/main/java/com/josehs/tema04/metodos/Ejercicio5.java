@@ -3,7 +3,9 @@ package com.josehs.tema04.metodos;
 import java.util.Scanner;
 
 public class Ejercicio5 {
+    /*
     public static int contarCaracteres(boolean caracter, int i, int j){
+
 
         do {
             caracter;
@@ -11,7 +13,11 @@ public class Ejercicio5 {
 
         } while (i<j);
         return caracter;
+
+
     }
+
+     */
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
