@@ -4,19 +4,25 @@ package com.josehs.tema04.lib.metodos;
 import java.util.Scanner;
 
 public class Ejercicio7 {
-    public static int factorial(int fact, int n){
-        for (int i=n;i>0;i--){
+    public static int factorial(int n) {
+        int fact = 1;
+        for (int i = 2; i <= n; ++i) {
             fact *= i;
         }
         return fact;
     }
+
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-
-        int fact=1;
         System.out.println("Dime el numero entero");
-        int n = teclado.nextInt();
+        int num = teclado.nextInt();
         teclado.close();
-        System.out.println("Factorial: "+factorial(fact, n));
+        if (num<0){
+            System.out.println("Error");
+        } else {
+            int resultado = factorial(num);
+            System.out.printf("Factorial:%d\n", resultado);
+        }
     }
+
 }
