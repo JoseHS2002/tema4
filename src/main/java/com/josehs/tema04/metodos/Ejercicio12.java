@@ -1,27 +1,41 @@
 package com.josehs.tema04.metodos;
 
-import java.util.Scanner;
+import java.util.Random;
 
 public class Ejercicio12 {
-    public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Escribe tu calificacion");
-        int nota = teclado.nextInt();
-        nota=0;
-        if (nota==0 && nota<5) {
+/*
+* @param
+* @return
+* @author
+* @version
+* @since
+* @throws
+* @see
+ */
+    public static int CNota(int a) {
+        int CNota = a;
+        if (a==0 && a<5) {
             System.out.println("INSUFICIENTE");
-        } else if (nota==5 && nota<6) {
+        } else if (a==5 && a<6) {
             System.out.println("SUFICIENTE");
-        } else if (nota==6 && nota<7) {
+        } else if (a==6 && a<7) {
             System.out.println("BIEN");
-        } else if (nota==7 && nota<9) {
+        } else if (a==7 && a<9) {
             System.out.println("NOTABLE");
-        } else if (nota==9 && nota==10) {
-            System.out.println("SOBRESALIENTE");
-        } else {
-            System.out.println("ERROR");
+        } else if (a==9 && a==10) {
+            System.out.println("EXCELENTE");
         }
-        teclado.close();
+        return CNota;
     }
 
+    public static void main(String[] args) {
+        int c;
+        Random aleatorio = new Random();
+        for (int i = 0; i == 50; i++) {
+            int nota = aleatorio.nextInt(0, 11);
+            c = CNota(nota);
+            System.out.println(c);
+        }
+
+    }
 }
