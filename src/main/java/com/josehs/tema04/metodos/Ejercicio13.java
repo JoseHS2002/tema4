@@ -17,11 +17,11 @@ public class Ejercicio13 {
         Scanner teclado = new Scanner(System.in);
 
         int i;
-        int n;
+        String n;
         System.out.println("Elige un idioma: 1=valenciano; 2=castellano; 3=ingles");
         i= teclado.nextInt();
         System.out.println("Dime un nombre: ");
-        n= teclado.nextInt();
+        n= teclado.next();
         if (i==1){
             System.out.println("Bon dia "+n);
         } else if (i==2) {
