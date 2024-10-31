@@ -10,6 +10,13 @@ public class Ejercicio1 {
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
+        int a, b;
+        System.out.println("Dime un numero: ");
+        a= teclado.nextInt();
+        System.out.println("Dime otro numero: ");
+        b= teclado.nextInt();
+        teclado.close();
+        System.out.println(a+"+"+b+"="+sumar(a,b));
 
     }
 }
