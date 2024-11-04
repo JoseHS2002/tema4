@@ -20,7 +20,7 @@ public class Ejercicio5 {
 
     public static void main(String[] args) {
         Scanner teclado=new Scanner(System.in);
-        long x=225000000000L;
+        long x=225_000_000_000L;
         long v=0L;
         long t=x/v;
         long ss;
