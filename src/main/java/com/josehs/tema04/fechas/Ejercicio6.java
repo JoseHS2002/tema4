@@ -14,7 +14,7 @@ public class Ejercicio6 {
     public static void main(String[] args) {
         LocalDate hoy = LocalDate.now();
         LocalDate nochevieja = LocalDate.of(hoy.getYear(), 12, 31);
-        System.out.println("\u001B[1B hoy \u001B[0B");
+        System.out.printf("\u001B[1B hoy \u001B[0B");
 
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
