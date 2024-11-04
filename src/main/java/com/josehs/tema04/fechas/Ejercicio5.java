@@ -30,6 +30,7 @@ public class Ejercicio5 {
         System.out.println("Dime la velocidad: ");
         v=teclado.nextLong();
         long kmH=(v*3600)/1000;
+        teclado.close();
         System.out.println("Velocidad"+kmH+" ;Tiempo estimado: "+d);
         LocalDate FechaSalida=LocalDate.now();
         LocalTime HoraSalida=LocalTime.now();
