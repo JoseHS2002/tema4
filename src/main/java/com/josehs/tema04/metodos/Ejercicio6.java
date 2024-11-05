@@ -3,37 +3,39 @@ package com.josehs.tema04.metodos;
 import java.util.Scanner;
 
 public class Ejercicio6 {
-    /*public static int contarCaracteres(char caracter, int i, int j, int k){
-        i=0;
-        k=0;
-        if (n<=0){
-            return null;
-            caracter;
-            i++;
-            k++;
+    public static void contarCaracteresMatriz(char caracter, int x, int y){
 
-        } while (i<j && k<j);
-        for (int i=n);
-        return caracter;
+        for (int i=1; i <= x;i++){
+            for (int j = 1; j <= y; j++){
+                System.out.print(caracter);
+            }
+            System.out.println();
+        }
     }
 
-     */
+    public static String strContarCaracteresMatriz(char caracter, int x, int y){
+        String s= "";
+        for (int i=1; i <= x; i++){
+            s+=Ejercicio5.strContarCaracteres(caracter, y)+"\n";
+        }
+        return s;
+    }
 
     public static void main(String[] args) {
-        /*
-        Scanner teclado = new Scanner(System.in);
-        int k=0;
-        int i=0;
-        //char caracter;
-        System.out.println("Escribe un caracter: ");
-        //caracter=teclado.nextInt();
-        //System.out.println(caracter);
-        System.out.println("Cuantas veces se imprime: ");
-        int j=teclado.nextInt();
-        System.out.println(j);
-        System.out.println("Numero de veces en las que el caracter se repite: "+i);
-        System.out.println("Numero de lineas que se imprime: "+k);
 
-     */
+        Scanner teclado = new Scanner(System.in);
+        int x, y;
+        char caracter;
+        System.out.println("Escribe un caracter: ");
+        caracter=teclado.nextLine().charAt(0);
+        System.out.print("Filas: ");
+        x=Integer.parseInt(teclado.nextLine());
+        System.out.println("Columnas: ");
+        y=Integer.parseInt(teclado.nextLine());
+        contarCaracteresMatriz(caracter, x, y);
+        teclado.close();
+        System.out.println();
+        System.out.println(strContarCaracteresMatriz(caracter, x, y));
+
     }
 }

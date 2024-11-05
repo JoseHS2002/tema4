@@ -24,28 +24,28 @@ public class Ejercicio5 {
         long v=0L;
         long t=x/v;
         long ss;
-        long mm, HH, d;
-        long FechaLlegada;
+        long mm, h, d;
+        LocalDate fechaLlegada;
 
         System.out.println("Dime la velocidad: ");
         v=teclado.nextLong();
         long kmH=(v*3600)/1000;
         teclado.close();
-        System.out.println("Velocidad"+kmH+" ;Tiempo estimado: "+d);
-        LocalDate FechaSalida=LocalDate.now();
-        LocalTime HoraSalida=LocalTime.now();
+        System.out.println("Velocidad"+kmH);
+        LocalDate fechaSalida=LocalDate.now();
+        LocalTime horaSalida=LocalTime.now();
         mm=t/60;
         ss=t%60;
-        HH=mm/60;
+        h=mm/60;
         mm=mm%60;
-        d=HH/24;
-        HH=HH%24;
-        FechaLlegada=FechaSalida.plusDays(d);
-        LocalTime HoraLlegada=LocalTime.of(HH,mm,ss);
-        System.out.println("Fecha de salida: "+FechaSalida);
-        System.out.println("Hora de salida: "+HoraSalida);
-        System.out.println("Fecha de llegada: "+FechaLlegada);
-        System.out.println("Hora de llegada: "+HoraLlegada);
+        d=h/24;
+        h=h%24;
+        fechaLlegada = fechaSalida.plusDays(d);
+        LocalTime horaLlegada=LocalTime.of((int)h,(int)mm,(int)ss);
+        System.out.println("Fecha de salida: "+fechaSalida);
+        System.out.println("Hora de salida: "+horaSalida);
+        System.out.println("Fecha de llegada: "+fechaLlegada);
+        System.out.println("Hora de llegada: "+horaLlegada);
 
     }
 }
